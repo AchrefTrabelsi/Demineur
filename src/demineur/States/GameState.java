@@ -161,7 +161,7 @@ public class GameState extends State {
 		{
 			if(Paused && ResumeButton.contains(Mousex,Mousey))
 			{
-				if(!gameover)
+				if(!gameover && firstclick)
 				{
 					clock.Resume();
 				}
